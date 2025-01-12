@@ -1,0 +1,233 @@
+@charset 'UTF-8';
+
+$main-color: #ffffff;
+$logo-font-color: #ffffff;
+$font-color: rgba(56, 62, 69, 1);
+$title-font-size: 32px;
+$text-font-size: 14.4px;
+
+/********************************
+共通スタイル
+********************************/
+
+* {
+    font-family: Hiragino Kaku Gothic ProN;
+    color: $font-color;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 858px;
+    margin: 0 auto;
+}
+
+.section-title {
+    
+}
+
+/********************************
+header
+********************************/
+
+.header {
+    height: 60px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-logo {
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    color: $logo-font-color;
+    background-color: black;
+    padding: 10px 21px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-navs {
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    :not(:first-child) {
+        margin-left: 30px;
+    }
+
+    li {
+        a {
+            font-size: $text-font-size;
+        }
+    }
+}
+
+/********************************
+main-visual
+********************************/
+
+.main-visual {
+}
+
+.main-visual-img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/********************************
+About
+********************************/
+
+.about-section {
+    margin-top: 80px;
+}
+
+.about-container {
+    max-width: 531px;
+    width: 41.5%;
+}
+
+.about-title {
+    position: relative;
+    text-align: center;
+    font-size: $title-font-size;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 106px;
+        border-bottom: #383e45 1px solid;
+        bottom: -10px;
+        left: 51%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.about-contents {
+    display: flex;
+    margin-top: 80px;
+}
+
+.about-img-container {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.about-profile {
+    margin-left: 30px;
+}
+
+.about-profile-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about-profile-text {
+    margin-top: 10px;
+    font-size: $text-font-size;
+}
+
+
+/********************************
+Bicycle
+********************************/
+
+.bicycle-section {
+    margin-top: 115px;
+}
+
+.bicycle-container {
+
+}
+
+.bicycle-title {
+    font-size: $title-font-size;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 122px;
+        border-bottom: solid 1px rgba(56, 62, 69, 1);
+        left: 50%;
+        bottom: -10px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.bicycle-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.bicycle-item {
+
+    a {
+        display: block;
+        height: 100%;
+    }
+}
+
+.bicycle-img {
+    width: 100%;
+    height: 100%;
+    max-width: 278px;
+    max-height: 180px;
+}
+
+.bicycle-item-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bicycle-item-text {
+    font-size: $text-font-size;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/********************************
+footer
+********************************/
+
+.footer {
+    margin-top: 110px;
+    padding-bottom: 10px;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.copylight {
+    font-size: 8px;
+}
