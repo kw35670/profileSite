@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+/********************************
+detail
+********************************/
+
+.detail-section {
+
+}
+
+.detail-container {
+
+}
+
+.detail-img {
+    width: 100%;
+}
+
+.detail-contents {
+    margin-top: 30px;
+}
+
+.detail-title {
+    font-size: 21.6px;
+    font-weight: bold;
+}
+
+.detail-text-container {
+    margin-top: 30px;
+}
+
+.detail-text {
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.detail-top-link {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+}

@@ -1,0 +1,94 @@
+@charset 'UTF-8';
+
+$main-color: #ffffff;
+$logo-font-color: #ffffff;
+$font-color: rgba(56, 62, 69, 1);
+$title-font-size: 32px;
+$text-font-size: 14.4px;
+
+/********************************
+共通スタイル
+********************************/
+
+* {
+    font-family: Hiragino Kaku Gothic ProN;
+    color: $font-color;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 858px;
+    margin: 0 auto;
+}
+
+.section-title {
+    
+}
+
+
+/********************************
+header
+********************************/
+
+.header {
+    height: 60px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-logo {
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    color: $logo-font-color;
+    background-color: black;
+    padding: 10px 21px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-navs {
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    :not(:first-child) {
+        margin-left: 30px;
+    }
+
+    li {
+        a {
+            font-size: $text-font-size;
+        }
+    }
+}
+
+
+/********************************
+footer
+********************************/
+
+.footer {
+    margin-top: 110px;
+    padding-bottom: 10px;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.copylight {
+    font-size: 8px;
+}

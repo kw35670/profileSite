@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/********************************
+共通スタイル
+********************************/
+* {
+  font-family: Hiragino Kaku Gothic ProN;
+  color: rgb(56, 62, 69);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 858px;
+  margin: 0 auto;
+}
+
+/********************************
+header
+********************************/
+.header {
+  height: 60px;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-logo {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: black;
+  padding: 10px 21px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.header-nav :not(:first-child) {
+  margin-left: 30px;
+}
+.header-nav li a {
+  font-size: 14.4px;
+}
+
+/********************************
+footer
+********************************/
+.footer {
+  margin-top: 110px;
+  padding-bottom: 10px;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.copylight {
+  font-size: 8px;
+}
