@@ -21,14 +21,12 @@ a {
 }
 
 .container {
-    max-width: 858px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
 .section-title {
-    
 }
-
 
 /********************************
 header
@@ -41,8 +39,7 @@ header
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 4%;
 }
 
 .header-logo {
@@ -74,7 +71,6 @@ header
         }
     }
 }
-
 
 /********************************
 footer

@@ -1,6 +1,11 @@
 /********************************
 detail
 ********************************/
+.detail-container {
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
 .detail-img {
   width: 100%;
 }
